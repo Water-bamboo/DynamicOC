@@ -1,116 +1,62 @@
 [中文介绍](https://github.com/dKingbin/DynamicOC/blob/master/README-chs.md) | [原理介绍](https://github.com/dKingbin/DynamicOC/blob/master/principle_chs.md)
 
-# DynamicOC
+## DynamicOC
 A hotfix library based on flex/yacc. You can call any Objective-C class and method using DynamicOC.
 DynamicOC is functionally similar to [JSPath](https://github.com/bang590/JSPatch), but it only needs to write native OC syntax to implement hotfix.
 
-## Features
+## Usage
+# Step1 Add hot code when app startup, it will finish injection.
 
-- dynamically execute Objective-C code
-- dynamically execute C function and block 
-- dynamically add property
-- dynamically replace method
-- dynamically add method
-- Completed and detailed unit test
--  powerful OC syntax parser based on flex/yacc
-- support CGRect/CGSize/CGPoint/NSRange/UIEdgeInsets/CGAffineTransform C-struct
-...
-
-## Basic Usage
-
-####  dynamically execute block 
-
+Here is the sample
 ```
-NSString* text = @" \
-__block int result = 0;\
-UIView* view = [[UIView alloc]init];\
-void(^blk)(int value) = ^(int value){\
-    view.tag = value;\
-};\
-blk(1024);\
-return view.tag;";
-
-ASTNode* root = [ASTUtil parseString:text];
-ASTVariable* result = [root execute];
-NSAssert([result.value doubleValue] == 1024, nil);
-```
-
-#### dynamically execute C function
-
-```
-int echo(int value) {
-    return value;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    [self fetchHotfixCode];    
+    return YES;
 }
 
-NSString* text = @" \
-[OCCfuntionHelper defineCFunction:@\"echo\" types:@\"int, int\"]; \
-return echo(1024);";
-
-ASTNode* root = [ASTUtil parseString:text];
-ASTVariable* result = [root execute];
-NSAssert([result.value doubleValue] == 1024, nil);
+- (void)fetchHotfixCode{    
+    //本地服务器搭建https://www.perfect.org/docs/index_zh_CN.html    
+    //    
+    __block BOOL processed = false;   
+    __block NSDictionary *jsonDict = nil;    
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8181"];    
+    NSURLSession *session = [NSURLSession sharedSession];    
+    NSURLSessionDataTask *netTask = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {        
+        NSLog(@"Get请求返回的响应信息：%@", data);        
+        jsonDict = [JsonTool toDict:data];        
+        processed = true;    
+    }];    
+    [netTask resume];
+    
+    while (!processed) {        
+        [NSThread sleepForTimeInterval:0];    
+    }    
+    
+    if (jsonDict.count > 0) {        
+        NSString *argsRow = [jsonDict valueForKey:@"args"];        
+        NSArray *args = @[];        
+        if (argsRow.length > 0) {            
+            args = [argsRow componentsSeparatedByString:@","];        
+        }        
+    if (!args) {            
+        args = @[];        
+    }                
+    
+    [DynamicOCAPI hookClass:[jsonDict valueForKey:@"class"] 
+                selector:[jsonDict valueForKey:@"selector"]              
+                argNames:args                   
+                    isClass:[[jsonDict valueForKey:@"isClass"] boolValue]        
+                    implementation:[jsonDict valueForKey:@"hotcode"]];    
+    }
+}
 ```
 
-#### dynamically add property
+# Step2 Add a localserver
+https://www.perfect.org/docs/gettingStarted_zh_CN.html
 
-```
-NSString* text = @" \
-[OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
-[OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
-NSString* key = @\"key\"; \
-objc_setAssociatedObject(self, key, @(1024), 1);\
-return objc_getAssociatedObject(self, key);";
+* just git clone https://github.com/Water-bamboo/DynamicOCServer.git
+cd $project
+swift build
+.build/debug/PerfectTemplate
 
-ASTNode* root = [ASTUtil parseString:text];
-ASTVariable* result = [root execute];
-NSAssert([result.value doubleValue] == 1024, nil);
-```
-
-####  Supported Syntax
-
-* [x]  if/else  while do/while for
-* [x]  return break continue 
-* [x]  i++ i-- ++i --i
-* [x]  +i  -i  !i
-* [x]  + - * / %     Arithmetic operation
-* [x]  >> << & | ^ Bit operation
-* [x]  && || >= <= != > < Compare operation
-* [x]  ?:
-* [x]  __block
-* [x] array[i] dict[@""]
-* [x] @666  @()  @[]  @{}
-* [x] self super
-* [x] self.property 
-* [x] self->_property
-* [x] most of objective-c keyword
-
-## TODO
-* [ ] @available()
-* [ ] [NSString stringWithFormat:"%d",value] : use [NSString stringWithFormat:"%@",@(value)] instead。
-* [ ] dispatch_async / dispatch_after ...
-* [ ] *stop =YES, in block
-* [ ] fix bugs
-
-## Communication
-
-- GitHub : [dKingbin](https://github.com/dKingbin)
-- Email : loveforjyboss@163.com
-
-### Warnning
-
-```
-Purely technology sharing, DO NOT Sheld to appstore! 
-```
-
-### License
-
-```
-Copyright (c) 2019 dKingbin
-Licensed under MIT or later
-```
-
-DynamicOC required features are based on or derives from projects below:
-- MIT
-- [JSPatch](https://github.com/bang590/JSPatch)
-- [Aspects](https://github.com/steipete/Aspects)
-- [OCEval](https://github.com/lilidan/OCEval)
+* Replace your code to OCHotfixString.hot_hotcode.
