@@ -52,11 +52,11 @@ Here is the sample
 ```
 
 # Step2 Add a localserver
-https://www.perfect.org/docs/gettingStarted_zh_CN.html
 
-* just git clone https://github.com/Water-bamboo/DynamicOCServer.git
+* Just clone https://github.com/Water-bamboo/DynamicOCServer.git
 cd $project
 swift build
 .build/debug/PerfectTemplate
+ This is a server project based Perfect.(https://www.perfect.org/docs/gettingStarted_zh_CN.html)
 
 * Replace your code to OCHotfixString.hot_hotcode.
