@@ -14,8 +14,8 @@
 
 #import <objc/runtime.h>
 #import <dlfcn.h>
-
-#import "DynamicOC.h"
+#import "JsonTool.h"
+#import "DynamicOCAPI.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +25,78 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    [self demo];
+    [self fetchHotfixCode];
+    return YES;
+}
 
+- (void)fetchHotfixCode
+{
+    //本地服务器搭建https://www.perfect.org/docs/index_zh_CN.html
+    //
+    __block BOOL processed = false;
+    __block NSDictionary *jsonDict = nil;
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8181"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *netTask = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"Get请求返回的响应信息：%@", data);
+        jsonDict = [JsonTool toDict:data];
+        processed = true;
+    }];
+    [netTask resume];
+    
+    while (!processed) {
+        [NSThread sleepForTimeInterval:0];
+    }
+    
+    if (jsonDict.count > 0) {
+        NSString *argsRow = [jsonDict valueForKey:@"args"];
+        NSArray *args = @[];
+        if (argsRow.length > 0) {
+            args = [argsRow componentsSeparatedByString:@","];
+        }
+        if (!args) {
+            args = @[];
+        }
+        
+        [DynamicOCAPI hookClass:[jsonDict valueForKey:@"class"]
+              selector:[jsonDict valueForKey:@"selector"]
+              argNames:args
+               isClass:[[jsonDict valueForKey:@"isClass"] boolValue]
+        implementation:[jsonDict valueForKey:@"hotcode"]];
+    }
+
+//    //viewDidload
+//    NSString *hotfixCode = @"\
+//    self.title = @\"DynamicOC\"; \
+//    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64); \
+//    UIView *view = [UIView new]; \
+//    view.frame = CGRectMake(10, 64, 58, 48);\
+//    view.backgroundColor = UIColor.blueColor; \
+//    [self.view addSubview:view];\
+//    UIActivityIndicatorView* loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:2];    \
+//    loadingView.frame = CGRectMake(self.view.frame.size.width/2.0-22, self.view.frame.size.height/2.0-22, 44, 44);    \
+//    [loadingView startAnimating];    \
+//    [self.view addSubview:loadingView];    \
+//    ";
+
+//    NSMutableArray *argsArray = @[];
+//    NSDictionary *hotfixDict = @{@"class":@"ViewController",
+//                                 @"selector":@"viewDidLoad",
+//                                 @"args":argsArray,
+//                                 @"isClass":@(NO),
+//                                 @"hotcode": hotfixCode
+//    };
+//
+//    [DynamicOC hookClass:[hotfixDict valueForKey:@"class"]
+//             selector:[hotfixDict valueForKey:@"selector"]
+//             argNames:[hotfixDict valueForKey:@"args"]
+//              isClass:[[hotfixDict valueForKey:@"isClass"] boolValue]
+//       implementation:[hotfixDict valueForKey:@"hotcode"]];
+}
+
+- (BOOL)demo
+{
     NSString* text = @" \
     [OCCfuntionHelper defineCFunction:@\"NSSelectorFromString\" types:@\"SEL,NSString *\"];\
     [OCCfuntionHelper defineCFunction:@\"class_getMethodImplementation\" types:@\"IMP,Class,SEL\"];\
@@ -74,7 +145,7 @@
         };\
     ";
 
-    [DynamicOC hookClass:@"ViewController"
+    [DynamicOCAPI hookClass:@"ViewController"
                 selector:@"tableView:numberOfRowsInSection:"
                 argNames:@[@"tableView",@"section"]
                  isClass:NO
@@ -98,7 +169,7 @@
     return cell;\
     ";
 
-    [DynamicOC hookClass:@"ViewController"
+    [DynamicOCAPI hookClass:@"ViewController"
                 selector:@"tableView:cellForRowAtIndexPath:"
                 argNames:@[@"tableView",@"indexPath"]
                  isClass:NO
@@ -135,7 +206,7 @@
     }];\
     ";
 
-    [DynamicOC hookClass:@"ViewController"
+    [DynamicOCAPI hookClass:@"ViewController"
              selector:@"viewDidLoad"
              argNames:@[]
               isClass:NO

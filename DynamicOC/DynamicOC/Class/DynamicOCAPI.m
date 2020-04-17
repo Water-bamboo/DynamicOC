@@ -6,7 +6,7 @@
 //  Copyright © 2019 dKingbin. All rights reserved.
 //
 
-#import "DynamicOC.h"
+#import "DynamicOCAPI.h"
 
 #import "Aspects.h"
 #import <objc/runtime.h>
@@ -19,7 +19,7 @@
 
 extern NSMutableDictionary* gblVariables;
 
-@implementation DynamicOC
+@implementation DynamicOCAPI
 
 + (void)hookClass:(NSString *)clsName
 		 selector:(NSString *)selName

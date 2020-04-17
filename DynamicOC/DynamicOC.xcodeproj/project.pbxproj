@@ -13,50 +13,57 @@
 		C40BAE7522E6E5E600885A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40BAE7422E6E5E600885A9D /* Assets.xcassets */; };
 		C40BAE7822E6E5E600885A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BAE7622E6E5E600885A9D /* LaunchScreen.storyboard */; };
 		C40BAE7B22E6E5E600885A9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAE7A22E6E5E600885A9D /* main.m */; };
-		C40BAFE822E6E62C00885A9D /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDA22E6E62C00885A9D /* ASTUtil.m */; };
 		C40BAFE922E6E62C00885A9D /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDA22E6E62C00885A9D /* ASTUtil.m */; };
-		C40BAFEA22E6E62C00885A9D /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */; };
 		C40BAFEB22E6E62C00885A9D /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */; };
-		C40BAFEC22E6E62C00885A9D /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDE22E6E62C00885A9D /* ASTContext.m */; };
 		C40BAFED22E6E62C00885A9D /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDE22E6E62C00885A9D /* ASTContext.m */; };
-		C40BAFEE22E6E62C00885A9D /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE022E6E62C00885A9D /* ASTNode.m */; };
 		C40BAFEF22E6E62C00885A9D /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE022E6E62C00885A9D /* ASTNode.m */; };
-		C40BAFF022E6E62C00885A9D /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */; };
 		C40BAFF122E6E62C00885A9D /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */; };
-		C40BAFF222E6E62C00885A9D /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE422E6E62C00885A9D /* ASTVariable.m */; };
 		C40BAFF322E6E62C00885A9D /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE422E6E62C00885A9D /* ASTVariable.m */; };
-		C40BB0DB22E6E63D00885A9D /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */; };
 		C40BB0DC22E6E63D00885A9D /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */; };
-		C40BB19722E6E63D00885A9D /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0C422E6E63D00885A9D /* NSValue+struct.m */; };
 		C40BB19822E6E63D00885A9D /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0C422E6E63D00885A9D /* NSValue+struct.m */; };
-		C40BB19B22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */; };
 		C40BB19C22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */; };
-		C40BB19D22E6E63D00885A9D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CB22E6E63D00885A9D /* Aspects.m */; };
 		C40BB19E22E6E63D00885A9D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CB22E6E63D00885A9D /* Aspects.m */; };
-		C40BB19F22E6E63D00885A9D /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */; };
 		C40BB1A022E6E63D00885A9D /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */; };
-		C40BB1AA22E6E64700885A9D /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A522E6E64700885A9D /* parser.ym */; };
 		C40BB1AB22E6E64700885A9D /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A522E6E64700885A9D /* parser.ym */; };
-		C40BB1AE22E6E64700885A9D /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A722E6E64700885A9D /* tokenizer.lm */; };
 		C40BB1AF22E6E64700885A9D /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A722E6E64700885A9D /* tokenizer.lm */; };
 		C40BB1B122E6E6EE00885A9D /* CallCFunctionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B022E6E6EE00885A9D /* CallCFunctionTest.m */; };
 		C40BB1B322E6EAC200885A9D /* CallOCFunctionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B222E6EAC200885A9D /* CallOCFunctionTest.m */; };
 		C40BB1B522E6EB6400885A9D /* OCIfControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B422E6EB6400885A9D /* OCIfControlTest.m */; };
 		C40BB1B722E711E900885A9D /* OCWhileControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B622E711E900885A9D /* OCWhileControlTest.m */; };
 		C40BB1B922E7F18F00885A9D /* OCPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B822E7F18F00885A9D /* OCPropertyTest.m */; };
-		C40BB1C222E8048D00885A9D /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1C122E8048D00885A9D /* ASTMethodNode.m */; };
 		C40BB1C322E8048D00885A9D /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1C122E8048D00885A9D /* ASTMethodNode.m */; };
 		C4D51D3722EB072C009FEAEA /* OCBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51D3622EB072C009FEAEA /* OCBlockTest.m */; };
-		C4FD4B0A22EE94810071652D /* DynamicOC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0922EE94810071652D /* DynamicOC.m */; };
-		C4FD4B0D22EECCAA0071652D /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0C22EECCAA0071652D /* OCExtension.m */; };
 		C4FD4B0E22EECCAA0071652D /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0C22EECCAA0071652D /* OCExtension.m */; };
 		C4FD4B1322F015270071652D /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BB0D622E6E63D00885A9D /* libffi.a */; };
 		C4FD4B1422F0153E0071652D /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BB0D622E6E63D00885A9D /* libffi.a */; };
-		E266C65422EC518500E3CB78 /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65322EC518500E3CB78 /* ASTBlockNode.m */; };
+		CAB584302449C6DC0074B16E /* DynamicOCAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C4FD4B0822EE94810071652D /* DynamicOCAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAB584312449C9EB0074B16E /* JsonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CACD66C424494499005E2250 /* JsonTool.m */; };
+		CACD66F524499E5A005E2250 /* DynamicOC.h in Headers */ = {isa = PBXBuildFile; fileRef = CACD66F324499E5A005E2250 /* DynamicOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CACD66F824499E5A005E2250 /* DynamicOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACD66F124499E59005E2250 /* DynamicOC.framework */; };
+		CACD66FA24499E5A005E2250 /* DynamicOC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CACD66F124499E59005E2250 /* DynamicOC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CACD66FE24499EC4005E2250 /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A522E6E64700885A9D /* parser.ym */; };
+		CACD66FF24499EC4005E2250 /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A722E6E64700885A9D /* tokenizer.lm */; };
+		CACD670124499EC4005E2250 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CB22E6E63D00885A9D /* Aspects.m */; };
+		CACD670324499EC4005E2250 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */; };
+		CACD670524499EC4005E2250 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0C22EECCAA0071652D /* OCExtension.m */; };
+		CACD670724499EC4005E2250 /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */; };
+		CACD670924499EC4005E2250 /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0C422E6E63D00885A9D /* NSValue+struct.m */; };
+		CACD670B24499EC4005E2250 /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */; };
+		CACD671824499EC4005E2250 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */; };
+		CACD671B24499EC5005E2250 /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE422E6E62C00885A9D /* ASTVariable.m */; };
+		CACD671D24499EC5005E2250 /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */; };
+		CACD671F24499EC5005E2250 /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDA22E6E62C00885A9D /* ASTUtil.m */; };
+		CACD672124499EC5005E2250 /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDE22E6E62C00885A9D /* ASTContext.m */; };
+		CACD672324499EC5005E2250 /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE022E6E62C00885A9D /* ASTNode.m */; };
+		CACD672524499EC5005E2250 /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */; };
+		CACD672724499EC5005E2250 /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1C122E8048D00885A9D /* ASTMethodNode.m */; };
+		CACD672924499EC5005E2250 /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65322EC518500E3CB78 /* ASTBlockNode.m */; };
+		CACD672B24499EC5005E2250 /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65722EC5A3600E3CB78 /* ASTType.m */; };
+		CACD672D24499EC5005E2250 /* DynamicOCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0922EE94810071652D /* DynamicOCAPI.m */; };
+		CACD67492449A0CA005E2250 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BB0D622E6E63D00885A9D /* libffi.a */; };
+		CACD674A2449A1B8005E2250 /* ASTHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C40BAFE722E6E62C00885A9D /* ASTHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E266C65522EC518500E3CB78 /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65322EC518500E3CB78 /* ASTBlockNode.m */; };
-		E266C65822EC5A3600E3CB78 /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65722EC5A3600E3CB78 /* ASTType.m */; };
 		E266C65922EC5A3600E3CB78 /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65722EC5A3600E3CB78 /* ASTType.m */; };
-		E266C65C22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */; };
 		E266C65D22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */; };
 		E289986A22E73D6C00811B14 /* OCForControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E289986922E73D6C00811B14 /* OCForControlTest.m */; };
 		E289986C22E741D000811B14 /* ArithmeticTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E289986B22E741D000811B14 /* ArithmeticTest.m */; };
@@ -72,10 +79,31 @@
 			remoteGlobalIDString = C40BAE6722E6E5E500885A9D;
 			remoteInfo = DynamicOC;
 		};
+		CACD66F624499E5A005E2250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40BAE6022E6E5E500885A9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CACD66F024499E59005E2250;
+			remoteInfo = DynamicOC;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CACD66F924499E5A005E2250 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CACD66FA24499E5A005E2250 /* DynamicOC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		C40BAE6822E6E5E500885A9D /* DynamicOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40BAE6822E6E5E500885A9D /* DynamicOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40BAE6B22E6E5E500885A9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C40BAE6C22E6E5E500885A9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C40BAE6E22E6E5E500885A9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -131,10 +159,15 @@
 		C40BB1C022E8048D00885A9D /* ASTMethodNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTMethodNode.h; sourceTree = "<group>"; };
 		C40BB1C122E8048D00885A9D /* ASTMethodNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTMethodNode.m; sourceTree = "<group>"; };
 		C4D51D3622EB072C009FEAEA /* OCBlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockTest.m; sourceTree = "<group>"; };
-		C4FD4B0822EE94810071652D /* DynamicOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicOC.h; sourceTree = "<group>"; };
-		C4FD4B0922EE94810071652D /* DynamicOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicOC.m; sourceTree = "<group>"; };
+		C4FD4B0822EE94810071652D /* DynamicOCAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicOCAPI.h; sourceTree = "<group>"; };
+		C4FD4B0922EE94810071652D /* DynamicOCAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicOCAPI.m; sourceTree = "<group>"; };
 		C4FD4B0B22EECCA90071652D /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
 		C4FD4B0C22EECCAA0071652D /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
+		CACD66C324494499005E2250 /* JsonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonTool.h; sourceTree = "<group>"; };
+		CACD66C424494499005E2250 /* JsonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonTool.m; sourceTree = "<group>"; };
+		CACD66F124499E59005E2250 /* DynamicOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CACD66F324499E5A005E2250 /* DynamicOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicOC.h; sourceTree = "<group>"; };
+		CACD66F424499E5A005E2250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E266C65222EC518500E3CB78 /* ASTBlockNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTBlockNode.h; sourceTree = "<group>"; };
 		E266C65322EC518500E3CB78 /* ASTBlockNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTBlockNode.m; sourceTree = "<group>"; };
 		E266C65622EC5A3600E3CB78 /* ASTType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTType.h; sourceTree = "<group>"; };
@@ -152,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACD66F824499E5A005E2250 /* DynamicOC.framework in Frameworks */,
 				C4FD4B1322F015270071652D /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +198,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACD66EE24499E59005E2250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACD67492449A0CA005E2250 /* libffi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -172,6 +214,7 @@
 			children = (
 				C40BAE6A22E6E5E500885A9D /* DynamicOC */,
 				C40BAE8322E6E5E600885A9D /* DynamicOCUITests */,
+				CACD66F224499E5A005E2250 /* DynamicOC */,
 				C40BAE6922E6E5E500885A9D /* Products */,
 				C4FD4B1122EFEED90071652D /* Frameworks */,
 			);
@@ -180,8 +223,9 @@
 		C40BAE6922E6E5E500885A9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C40BAE6822E6E5E500885A9D /* DynamicOC.app */,
+				C40BAE6822E6E5E500885A9D /* DynamicOCDemo.app */,
 				C40BAE8022E6E5E600885A9D /* DynamicOCUITests.xctest */,
+				CACD66F124499E59005E2250 /* DynamicOC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +245,8 @@
 				C40BAE7122E6E5E500885A9D /* Main.storyboard */,
 				C40BAE7922E6E5E600885A9D /* Info.plist */,
 				C40BAE7A22E6E5E600885A9D /* main.m */,
+				CACD66C324494499005E2250 /* JsonTool.h */,
+				CACD66C424494499005E2250 /* JsonTool.m */,
 			);
 			path = DynamicOC;
 			sourceTree = "<group>";
@@ -247,8 +293,8 @@
 				E266C65322EC518500E3CB78 /* ASTBlockNode.m */,
 				E266C65622EC5A3600E3CB78 /* ASTType.h */,
 				E266C65722EC5A3600E3CB78 /* ASTType.m */,
-				C4FD4B0822EE94810071652D /* DynamicOC.h */,
-				C4FD4B0922EE94810071652D /* DynamicOC.m */,
+				C4FD4B0822EE94810071652D /* DynamicOCAPI.h */,
+				C4FD4B0922EE94810071652D /* DynamicOCAPI.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -323,24 +369,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CACD66F224499E5A005E2250 /* DynamicOC */ = {
+			isa = PBXGroup;
+			children = (
+				CACD66F324499E5A005E2250 /* DynamicOC.h */,
+				CACD66F424499E5A005E2250 /* Info.plist */,
+			);
+			path = DynamicOC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CACD66EC24499E59005E2250 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACD66F524499E5A005E2250 /* DynamicOC.h in Headers */,
+				CAB584302449C6DC0074B16E /* DynamicOCAPI.h in Headers */,
+				CACD674A2449A1B8005E2250 /* ASTHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C40BAE6722E6E5E500885A9D /* DynamicOC */ = {
+		C40BAE6722E6E5E500885A9D /* DynamicOCDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C40BAE8922E6E5E600885A9D /* Build configuration list for PBXNativeTarget "DynamicOC" */;
+			buildConfigurationList = C40BAE8922E6E5E600885A9D /* Build configuration list for PBXNativeTarget "DynamicOCDemo" */;
 			buildPhases = (
 				C40BAE6422E6E5E500885A9D /* Sources */,
 				C40BAE6522E6E5E500885A9D /* Frameworks */,
 				C40BAE6622E6E5E500885A9D /* Resources */,
+				CACD66F924499E5A005E2250 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CACD66F724499E5A005E2250 /* PBXTargetDependency */,
 			);
-			name = DynamicOC;
+			name = DynamicOCDemo;
 			productName = DynamicOC;
-			productReference = C40BAE6822E6E5E500885A9D /* DynamicOC.app */;
+			productReference = C40BAE6822E6E5E500885A9D /* DynamicOCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C40BAE7F22E6E5E600885A9D /* DynamicOCUITests */ = {
@@ -361,6 +431,24 @@
 			productReference = C40BAE8022E6E5E600885A9D /* DynamicOCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CACD66F024499E59005E2250 /* DynamicOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CACD66FB24499E5A005E2250 /* Build configuration list for PBXNativeTarget "DynamicOC" */;
+			buildPhases = (
+				CACD66EC24499E59005E2250 /* Headers */,
+				CACD66ED24499E59005E2250 /* Sources */,
+				CACD66EE24499E59005E2250 /* Frameworks */,
+				CACD66EF24499E59005E2250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicOC;
+			productName = DynamicOC;
+			productReference = CACD66F124499E59005E2250 /* DynamicOC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -377,6 +465,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C40BAE6722E6E5E500885A9D;
 					};
+					CACD66F024499E59005E2250 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 				};
 			};
 			buildConfigurationList = C40BAE6322E6E5E500885A9D /* Build configuration list for PBXProject "DynamicOC" */;
@@ -392,8 +483,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C40BAE6722E6E5E500885A9D /* DynamicOC */,
+				C40BAE6722E6E5E500885A9D /* DynamicOCDemo */,
 				C40BAE7F22E6E5E600885A9D /* DynamicOCUITests */,
+				CACD66F024499E59005E2250 /* DynamicOC */,
 			);
 		};
 /* End PBXProject section */
@@ -416,6 +508,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACD66EF24499E59005E2250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -423,28 +522,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40BB1AA22E6E64700885A9D /* parser.ym in Sources */,
-				C40BAFE822E6E62C00885A9D /* ASTUtil.m in Sources */,
-				C40BB1C222E8048D00885A9D /* ASTMethodNode.m in Sources */,
-				C40BB19D22E6E63D00885A9D /* Aspects.m in Sources */,
-				C40BB0DB22E6E63D00885A9D /* OCMethodSignature.m in Sources */,
-				C4FD4B0D22EECCAA0071652D /* OCExtension.m in Sources */,
+				CAB584312449C9EB0074B16E /* JsonTool.m in Sources */,
 				C40BAE7022E6E5E500885A9D /* ViewController.m in Sources */,
-				E266C65422EC518500E3CB78 /* ASTBlockNode.m in Sources */,
-				C40BB1AE22E6E64700885A9D /* tokenizer.lm in Sources */,
-				C40BB19722E6E63D00885A9D /* NSValue+struct.m in Sources */,
-				C40BAFEC22E6E62C00885A9D /* ASTContext.m in Sources */,
 				C40BAE7B22E6E5E600885A9D /* main.m in Sources */,
-				C40BAFEE22E6E62C00885A9D /* ASTNode.m in Sources */,
-				C40BB19B22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */,
-				C4FD4B0A22EE94810071652D /* DynamicOC.m in Sources */,
 				C40BAE6D22E6E5E500885A9D /* AppDelegate.m in Sources */,
-				E266C65822EC5A3600E3CB78 /* ASTType.m in Sources */,
-				C40BAFF222E6E62C00885A9D /* ASTVariable.m in Sources */,
-				C40BB19F22E6E63D00885A9D /* OCCfuntionHelper.m in Sources */,
-				E266C65C22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */,
-				C40BAFEA22E6E62C00885A9D /* ASTPropertyNode.m in Sources */,
-				C40BAFF022E6E62C00885A9D /* ASTCallMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,13 +564,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACD66ED24499E59005E2250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACD66FE24499EC4005E2250 /* parser.ym in Sources */,
+				CACD66FF24499EC4005E2250 /* tokenizer.lm in Sources */,
+				CACD670124499EC4005E2250 /* Aspects.m in Sources */,
+				CACD670324499EC4005E2250 /* OCMethodSignature.m in Sources */,
+				CACD670524499EC4005E2250 /* OCExtension.m in Sources */,
+				CACD670724499EC4005E2250 /* OCCfuntionHelper.m in Sources */,
+				CACD670924499EC4005E2250 /* NSValue+struct.m in Sources */,
+				CACD670B24499EC4005E2250 /* OCCFuntionWrapper.m in Sources */,
+				CACD671824499EC4005E2250 /* OCBlockWrapper.m in Sources */,
+				CACD671B24499EC5005E2250 /* ASTVariable.m in Sources */,
+				CACD671D24499EC5005E2250 /* ASTCallMethod.m in Sources */,
+				CACD671F24499EC5005E2250 /* ASTUtil.m in Sources */,
+				CACD672124499EC5005E2250 /* ASTContext.m in Sources */,
+				CACD672324499EC5005E2250 /* ASTNode.m in Sources */,
+				CACD672524499EC5005E2250 /* ASTPropertyNode.m in Sources */,
+				CACD672724499EC5005E2250 /* ASTMethodNode.m in Sources */,
+				CACD672924499EC5005E2250 /* ASTBlockNode.m in Sources */,
+				CACD672B24499EC5005E2250 /* ASTType.m in Sources */,
+				CACD672D24499EC5005E2250 /* DynamicOCAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		C40BAE8222E6E5E600885A9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C40BAE6722E6E5E500885A9D /* DynamicOC */;
+			target = C40BAE6722E6E5E500885A9D /* DynamicOCDemo */;
 			targetProxy = C40BAE8122E6E5E600885A9D /* PBXContainerItemProxy */;
+		};
+		CACD66F724499E5A005E2250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CACD66F024499E59005E2250 /* DynamicOC */;
+			targetProxy = CACD66F624499E5A005E2250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,8 +742,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R9M596KX5K;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = DynamicOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,7 +755,7 @@
 					"$(PROJECT_DIR)/DynamicOC/Vendor/helper/libffi",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dKingbin.DynamicOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuizhu.DynamicOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -652,8 +766,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R9M596KX5K;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = DynamicOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,7 +779,7 @@
 					"$(PROJECT_DIR)/DynamicOC/Vendor/helper/libffi",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dKingbin.DynamicOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuizhu.DynamicOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -715,6 +831,72 @@
 			};
 			name = Release;
 		};
+		CACD66FC24499E5A005E2250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicOC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jit4ios.DynamicOC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CACD66FD24499E5A005E2250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DynamicOC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jit4ios.DynamicOC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,7 +909,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C40BAE8922E6E5E600885A9D /* Build configuration list for PBXNativeTarget "DynamicOC" */ = {
+		C40BAE8922E6E5E600885A9D /* Build configuration list for PBXNativeTarget "DynamicOCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C40BAE8A22E6E5E600885A9D /* Debug */,
@@ -741,6 +923,15 @@
 			buildConfigurations = (
 				C40BAE8D22E6E5E600885A9D /* Debug */,
 				C40BAE8E22E6E5E600885A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CACD66FB24499E5A005E2250 /* Build configuration list for PBXNativeTarget "DynamicOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACD66FC24499E5A005E2250 /* Debug */,
+				CACD66FD24499E5A005E2250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DynamicOC : NSObject
+@interface DynamicOCAPI : NSObject
 
 + (void)hookClass:(NSString *)clsName
 		 selector:(NSString *)selName
